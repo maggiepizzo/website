@@ -22,4 +22,4 @@ Builds the app for production to the build folder.
 ### `npm run build`
 ### `firebase deploy`
 
-Builds the app, and then deploys it to the firebase hosting service. The public website is hosted at [https:maggiepizzo.web.app](https://maggiepizzo.web.app).
+Builds the app, and then deploys it to the firebase hosting service. The public website is hosted at [https://maggiepizzo.web.app](https://maggiepizzo.web.app).
