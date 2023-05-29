@@ -18,7 +18,7 @@ const ProjectsPage = () => {
                     title="Pam's Tutoring Appointment Manager" 
                     description="An appointment booker for Pam's Tutoring company.  Allows clients and admin to schedule tutoring appointments and track payments."
                     url="https://pam-tutoring.web.app/"
-                    video="/media/ef-final.mp4"
+                    video="/media/pam-tutoring-mov.mp4"
                     languages="React, CSS and HTML"
                 />
             </div>
