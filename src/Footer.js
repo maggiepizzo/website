@@ -2,31 +2,25 @@ import './App.css';
 import { HiOutlineMail } from "react-icons/hi";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
+const FooterIcon = ({url, icon}) => {
+    return (
+        <a 
+            className='footerIcon'
+            href={url}
+            target="_blank"
+            rel="noreferrer">
+            {icon}
+        </a>
+    )
+}
+
 const Footer = () => {
     return (
         <div className='footer'>
             <p className='footerText'>Contact Me</p>
-             <a 
-                className='footerIcon'
-                href='https://www.linkedin.com/in/maggie-pizzo/' 
-                target="_blank"
-                rel="noreferrer">
-                   {<FaLinkedin/>}
-            </a>
-            <a 
-                className='footerIcon'
-                href='https://github.com/maggiepizzo' 
-                target="_blank"
-                rel="noreferrer">
-                   {<FaGithub/>}
-            </a>
-            <a 
-                className='footerIcon'
-                href='mailto:maggie.pizzo@gmail.com' 
-                target="_blank"
-                rel="noreferrer">
-                   {<HiOutlineMail/>}
-            </a>
+            <FooterIcon url='https://www.linkedin.com/in/maggie-pizzo/' icon={<FaLinkedin/>}/>
+            <FooterIcon url='https://github.com/maggiepizzo' icon={<FaGithub/>} />
+            <FooterIcon url='mailto:maggie.pizzo@gmail.com' icon={<HiOutlineMail/>}/>
         </div>
     )
 }
