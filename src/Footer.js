@@ -1,6 +1,6 @@
 import './App.css';
-import { TfiEmail } from "react-icons/tfi";
-import { FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -15,10 +15,17 @@ const Footer = () => {
             </a>
             <a 
                 className='footerIcon'
+                href='https://github.com/maggiepizzo' 
+                target="_blank"
+                rel="noreferrer">
+                   {<FaGithub/>}
+            </a>
+            <a 
+                className='footerIcon'
                 href='mailto:maggie.pizzo@gmail.com' 
                 target="_blank"
                 rel="noreferrer">
-                   {<TfiEmail/>}
+                   {<HiOutlineMail/>}
             </a>
         </div>
     )
