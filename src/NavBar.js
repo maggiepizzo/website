@@ -6,10 +6,10 @@ const NavBarButton = ({label, onClick, selected}) => {
     )
 }
 
-const NavBar = ({setPage, currPage}) => {
+const NavBar = ({setPage, currPage, setTextDelay}) => {
     return (
         <div className='navBar'>
-            <NavBarButton label="Home" onClick={() => setPage('home')} selected={currPage === 'home'}/>
+            <NavBarButton label="Home" onClick={() => {setPage('home'); setTextDelay(false)}} selected={currPage === 'home'}/>
             <NavBarButton label="Work Experience" onClick={() => setPage('experience')} selected={currPage === 'experience'}/>
             <NavBarButton label="Personal Projects" onClick={() => setPage('projects')} selected={currPage === 'projects'}/>
         </div>

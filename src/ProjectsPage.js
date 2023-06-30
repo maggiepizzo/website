@@ -5,7 +5,7 @@ const ProjectsPage = () => {
     return (
         <div className='page'>
             <h1>Personal Projects</h1>
-            <div style={{display: 'flex', flexDirection: 'row'}}>
+            <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', width: '100%'}}>
                 <Project
                     title="East Fork Shelf Builder" 
                     description="A drag-and-drop web app to test out different combinations of East Fork Pottery."
